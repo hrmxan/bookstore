@@ -1,0 +1,66 @@
+
+.kirish {
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+}
+.kirish section {
+	position: relative;
+	flex: 6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.kirish-left {
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	background-color: #30385c;
+	overflow: hidden;
+	position: relative;
+}
+.kirish-right {
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	background-color: white;
+	overflow: hidden;
+	position: relative;
+}
+.card-fon, .logo-left, .logo-right {
+	z-index: 3;
+}
+.card-fon h1 {
+	display: inline-block;
+	font-size: 8vw;
+	font-weight: bold;
+}
+.kirish-left h1 {
+	color: white;
+	position: relative;
+}
+.kirish-right h1 {
+	color: #30385c;
+	letter-spacing: 5px;
+	position: relative;
+}
+
+.cosmo {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+@media only screen and (max-width: 550px) {
+	.kirish {
+		flex-direction: column;
+	}
+	.card-fon h1 {
+		font-size: 10vw;
+	}
+}
